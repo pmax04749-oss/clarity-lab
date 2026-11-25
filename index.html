@@ -7,7 +7,13 @@
 <style>
 *{box-sizing:border-box}body{margin:0;background:#f1f5f9;color:#172033;font:16px/1.6 system-ui,sans-serif}main{max-width:760px;margin:auto;padding:24px}section{background:white;border:1px solid #dbe3ed;border-radius:16px;padding:24px;margin:20px 0}h1{font-size:32px;margin-bottom:0}h2{margin-top:0}button,input{font:inherit;border-radius:8px;padding:12px}button{background:#2456a6;color:white;border:0;cursor:pointer}button:hover{background:#19427f}input[type=text]{border:1px solid #94a3b8;flex:1;min-width:0}form,.actions{display:flex;gap:10px;flex-wrap:wrap}#error{color:#b42318;min-height:26px}ul{list-style:none;padding:0}li{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #e2e8f0}li span{flex:1;overflow-wrap:anywhere}.done{text-decoration:line-through;color:#64748b}.delete{background:#a62b36}.secondary{background:#475569}.workspace{min-height:65vh}.faq{min-height:75vh}details{padding:18px 0;border-bottom:1px solid #dbe3ed}summary{cursor:pointer;font-weight:600}footer{text-align:center;color:#475569;padding:30px}@media(max-width:480px){main{padding:14px}section{padding:16px}form input{width:100%;flex-basis:100%}}
 </style>
-<!-- CLARITY TRACKING CODE HERE -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "zjc2999yqu");
+</script>
 </head>
 <body><main><header><h1>My Task Manager</h1><p>Organize your day, one task at a time.</p></header>
 <section class="workspace"><h2>Your tasks</h2><form id="taskForm" novalidate><input id="taskInput" type="text" aria-label="New task" placeholder="Enter a task" maxlength="150"><button type="submit">Add task</button></form><p id="error" role="alert"></p><p id="count" aria-live="polite">0 tasks remaining</p><ul id="tasks"></ul><p id="empty">No tasks yet. Add your first task above.</p><div class="actions"><button id="clear" class="secondary">Clear completed</button><button type="button">Quick Tips</button></div></section>
